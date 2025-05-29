@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="head">Welcome Teller!</h1>
+    <span class="line"></span>
+    <nav>
+      <ul>
+        <li><a href="./users.html">Users</a></li>
+        <li><a href="./transactions.html">Transactions</a></li>
+        <li><a href="./loan.html">Credit</a></li>
+      </ul>
+    </nav>
+    <span class="line"></span>
+
+    <div class="create">
+      <h1>Open an account</h1>
+
+      <h2>Name:</h2>
+      <input type="text" name="name" id="name" />
+      <h2>Balance:</h2>
+      <input type="number" name="balance" id="balance" />
+      <button onclick="create()" class="cbtn">Open Account</button>
+    </div>
+    <table border="2">
+      <tr>
+        <th>Name</th>
+        <th>Balance</th>
+      </tr>
+      <tbody id="users">
+        <tr>name</tr>
+        <tr>balance</tr>
+      </tbody>
+    </table>
+  </body>
+  <script src="./script.js"></script>
+</html>

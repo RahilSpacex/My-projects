@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #B6B09F;
+}
+.head{
+    color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 90px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    justify-self: center;
+}
+.line{
+    display: block;
+    background-color: black;
+    height: 1px;
+    justify-self: center;
+    width: 90%;
+}
+ul{
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+    list-style: none;
+}
+ul li a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 50px;
+
+}
+ul li a:hover{
+    color: rgb(73, 73, 73);
+}
+.create{
+    display: block;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+#name,#balance{
+    display: flex;
+    width: 20%;
+    outline: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border-style: solid;
+    border-color: rgb(17, 17, 17);
+    border-width: 5px;
+    padding: 10px;
+    margin-top: 1%;
+}
+.cbtn{
+    margin-top: 3%;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+.create h1{
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: underline;
+    font-size: 70px;
+    color: black;
+}
+.create h2{
+    margin-top: 1%;
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 40px;
+    color: black;
+}
+table{
+    margin-top: 2.5%;
+    margin-left: 5%;
+    border-style: solid;
+    border-width: 5px;
+    border-collapse: collapse;
+    font-family: "Roboto Condensed", sans-serif;
+    border-color: black;
+}
+table th{
+    padding: 10px;
+    font-size: 30px;
+    border-width: 5px;
+    border-style: solid;
+}
