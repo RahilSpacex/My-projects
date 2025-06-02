@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181C14;
+}
+.clock{
+    display: flex;
+    justify-self: center;
+    margin-top: 10%;
+    background-color:#3C3D37;
+    border: 10px solid #000000;
+    padding: 10px;
+}
+.mainClock{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Doto", sans-serif;
+    height: fit-content;
+    
+}
+
+.mainClock #mt,#ms,#ct{
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    border: 5px solid black;
+}
+.btn{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    height: fit-content;
+}
+ul li{
+    list-style: none;
+    font-family: "Doto", sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #111111;
+    border: 4px solid black;
+    color: green;
+}
