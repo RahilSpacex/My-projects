@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayer Clock</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
 </head>
-<body>
+<body onload="startTime()">
+    <h1 class="heading">Prayer Clock</h1>
     <div class="clock">
         <div class="mainClock">
-            <h1 id="mt">12 : 00</h1>
-            <h2 id="ms">30</h2>
+            <h1 id="mt"></h1>
+            <h2 id="ms"></h2>
             <div class="countDown">
           <h1 id="ct">12 : 00</h1>
         </div>
          <div class="btn">
-         <h1 id="ab">Azaan</h1>
-          <h1 id="jb">Jamaat</h1>
+         <h1 id="ab"><div id="ca" class="cira on"></div>Azaan</h1>
+          <h1 id="jb"><div id="cj" class="cirj"></div>Jamaat</h1>
           </div>
         </div>
         
@@ -31,5 +33,5 @@
         </div>
     </div>
 </body>
-<script src="./script.js"></script>
+
 </html>`
