@@ -11,7 +11,6 @@ function startTime() {
   displayTime();
   setTimeout(startTime, 1000);
 }
-
 function displayTime() {
   const today = new Date();
   let h = today.getHours();
