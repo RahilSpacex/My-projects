@@ -1,16 +1,12 @@
 let hformat = false;
-const prayerTimes = {
-  Fajr: { time: 330, isAm: true },
-  Zuhr: { time: 90, isAm: false },
-  Asr: { time: 330, isAm: false },
-  Asr: { time: 390, isAm: false },
-  Isha: { time: 510, isAm: true },
-};
+let latitude;
+let longitude;
 
 function startTime() {
   displayTime();
   setTimeout(startTime, 1000);
 }
+
 function displayTime() {
   const today = new Date();
   let h = today.getHours();
@@ -51,3 +47,30 @@ function changeformat(h) {
     return h;
   }
 }
+
+
+function fetchCoords() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        const latitude = position.coords.latitude
+        const longitude = position.coords.longitude
+
+        const url = `https://api.aladhan.com/v1/timings/01-01-2025?latitude=${encodeURIComponent(latitude)}&longitude=${encodeURIComponent(longitude)}}`
+        try {
+          const response = await fetch(url)
+          const data = await response.json()
+          console.log(data)
+        } catch (error) {
+          console.error(error)
+        }
+      },
+      function lulz() {
+        latitude = 18.4433;
+        longitude = 78.4288;
+        console.log("Couldnt get position");
+      }
+    );
+  }
+}
+fetchCoords();
